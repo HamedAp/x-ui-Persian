@@ -18,7 +18,7 @@ Forked from [NidukaAkalanka repo](https://github.com/NidukaAkalanka/x-ui-english
 - Telegram Bot for basic functions and noticifactions
 - Support one-click SSL certificate application and automatic renewal
 - Can be securely migrated from v2-ui 
-- Can be securely updated from a previous X-UI (CH/EN) version without lossing outbounds
+- Can be securely updated from a previous X-UI version without lossing outbounds
 - For more advanced configuration items, see the panel for details
 
 
