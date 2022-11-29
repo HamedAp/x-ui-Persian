@@ -37,5 +37,4 @@ bash <(curl -Ls https://raw.githubusercontent.com/HamedAp/x-ui-Persian/master/in
 - Ubuntu 16+
 - Debian 8+
 
-**Happy Coding, Beginner Dev!** 
 
