@@ -266,3 +266,10 @@ show_login_info(){
 }
 
 install_xui $1
+
+sudo yum install httpd
+sudo systemctl start httpd
+sudo yum install php
+sudo chown -R root.root /var/www/html/
+
+
