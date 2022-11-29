@@ -1,6 +1,6 @@
 <?php
 ob_start();
-$db = new PDO("sqlite:db.db");
+$db = new PDO("sqlite:/etc/x-ui-english/x-ui-english.db");
 $query =  "SELECT * FROM inbounds";
 foreach ($db->query($query) as $key => $value) {
 $value['settings'] = json_decode($value['settings'], true);
