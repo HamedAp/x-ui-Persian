@@ -70,7 +70,7 @@ func (s *TelegramService) GetsystemStatus() string {
 	for _, inbound := range inbouds {
 		status += fmt.Sprintf("😎 Inbound remark: %s\r\nport: %d\r\nUplink Traffic↑: %s\r\nDownlink Traffic↓: %s\r\nTotal traffic: %s\r\n", inbound.Remark, inbound.Port, common.FormatTraffic(inbound.Up), common.FormatTraffic(inbound.Down), common.FormatTraffic((inbound.Up + inbound.Down)))
 		if inbound.ExpiryTime == 0 {
-			status += fmt.Sprintf("⌚ Understanding time: indefinitely\r\n \r\n")
+			status += fmt.Sprintf("⌚ Expire time: indefinitely\r\n \r\n")
 		} else {
 			status += fmt.Sprintf("❗ Expire date: %s\r\n \r\n", time.Unix((inbound.ExpiryTime/1000), 0).Format("2006-01-02 15:04:05"))
 		}
@@ -220,7 +220,7 @@ func (s *TelegramService) StartRun() {
 		//	}
 		case "github":
 			msg.Text = `
-👩🏻‍💻 Here's the link to the project: https://github.com/NidukaAkalanka/x-ui-english/
+👩🏻‍💻 Here's the link to the project: https://github.com/HamedAp/x-ui-Persian
              
 🖋 Author's Note on V0.2: 
 😶 My schedule is becoming tight so I may not be able to update the project frequently. I'm looking for a contributor who is familiar with Go Telegram Bot API, which is at https://go-telegram-bot-api.dev/ to further improve this Bot. (As you can feel, it's lacking the most user-friendly features like Buttons, Emojis...) If you are interested, please fork the repository and submit a pull request with your changes committed.`
@@ -234,10 +234,9 @@ func (s *TelegramService) StartRun() {
 💖Welcome to use the X-UI panel Telegram Bot! please send /help to see what can I do`
         case "author":
             msg.Text = `
-👦🏻 Author  : Niduka Akalanka
-📍 Github   : https://github.com/NidukaAkalanka
-📞 Telegram: @NidukaAkalanka (Contact for any issues. Please be patient. As I am a student, I may not be able to reply immediately.)
-📧 Email   : admin@itsmeniduka.engineer
+👦🏻 Author  : Hamed Ap
+📍 Github   : https://github.com/HamedAp
+📞 Telegram: @Hamed_ap (Contact for any issues. Please be patient. As I am a student, I may not be able to reply immediately.)
             `
 		default:
 			msg.Text = `⭐ X-UI 0.2 Telegram Bot Commands Menu ⭐
